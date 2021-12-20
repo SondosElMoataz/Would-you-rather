@@ -1,10 +1,18 @@
 # Would You Rather Project
 
-This is the starter code for the final assessment project for Udacity's React & Redux course.
+This is done using the  starter code for the final assessment project for Udacity's React & Redux course.
+
+The Project is a game where a user gets to choose only one choice for each poll created by him and other users 
+Users can't re vote for the same poll once again 
+Users may create new polls and post them to others 
+if a poll is already answered by the user the user can see the results of this vote and where did majority votes go 
+
+Leaderboard is where results of who voted for more polls or created more questions is 
+Top three users are ranked Gold Silver and bronze respectively 
+
+More information about database files are below:
 
 The `_DATA.js` file represents a fake database and methods that let you access the data. The only thing you need to edit in the ` _DATA.js` file is the value of `avatarURL`. Each user should have an avatar, so you’ll need to add the path to each user’s avatar.
-
-Using the provided starter code, you'll build a React/Redux front end for the application. We recommend using the [Create React App](https://github.com/facebook/create-react-app) to bootstrap the project.
 
 ## Data
 
@@ -95,6 +103,4 @@ Your code will talk to the database via 4 methods:
 | qid | String | The id of the question that was answered|
 | answer | String | The option the user selected. The value should be either `"optionOne"` or `"optionTwo"`|
 
-## Contributing
 
-This repository is the starter code for *all* Udacity students. Therefore, we most likely will not accept pull requests. For details, check out [CONTRIBUTING.md](https://github.com/udacity/reactnd-project-would-you-rather-starter/blob/master/CONTRIBUTING.md).

@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+  text-decoration: none;
+}
+.nav li {
+  color: black;
+  text-decoration: none;
+  border: black 2px solid;
+  padding: 2%;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+
+.avatar {
+  height: 50px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.poll {
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+  flex-direction: row;
+  text-decoration:none;
+  color:black;
+}
+
+.dashboard-list ul{
+  flex-direction: row;
+}
+.dashboard-btn{
+  border: solid black 2px;
+  box-sizing:border-box;
+  
+
+}
+.not-found{
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  padding-top: 25% ;
+  display: flex;
+}
+
+
+.wyr{
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+.login-form{
+  width: 100%;
+  max-width: 700px;
+  padding: 30% 50%;
+  display: flex;
+  height: 700px;
+  text-align: center;
+  font-size: 50px;
+
+}
+select {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing:border-box;
+  font-size: 20px;
+}
+option {
+  font-size: 20px;
+}
+.login-btn{
+  background-color: #4CAF50;
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing:border-box;
+  font-size: 20px;
+  font-family:'Courier New', Courier, monospace;
+ 
+}
+
+.votes-info{
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  color: #969696;
+  cursor: pointer;
+}
+
+.leaderboard-items {
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #dad7d7;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.rank {
+  position: absolute;
+  left:60%;
+  display: flex;
+  padding: 10px  10px;
+  font-style: oblique;
+  margin: 10px 10px;
+ 
+}
+
+.score {
+  position: absolute;
+  display: inline-block;
+  width: 25%;
+  right: 30%;
+  
+}
+.leaderboard-heading{
+  font-family: "Courier New", monospace;
+  font-size: 40px;
+  text-align: center;
+  border: none ;
+  
+  
+}
+
+.leaderboard-list{
+  padding-left: 0;
+}
+
+.leaderboard-list li:nth-child(1) div.leaderboard-items {border: 7px solid #ffd900c0;}
+.leaderboard-list li:nth-child(2) div.leaderboard-items {border: 7px solid #c0c0c0;}
+.leaderboard-list li:nth-child(3) div.leaderboard-items {border: 7px solid #cd7f32;}
+
+
+.new-poll-form{
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10%;
+
+}
+.new-options{
+  position: relative;
+  box-sizing: border-box;
+  margin: 5%;
+}
+.new-options>input{
+  position: relative;
+  box-sizing: border-box;
+  font-size: 30px;
+  margin-left: 5%;
+  
+}
+.submit-poll-btn{
+  width: 40%;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing:border-box;
+  font-size: 20px;
+  margin: 8px 0;
+  color: black;
+  
+}
