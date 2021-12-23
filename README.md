@@ -2,6 +2,11 @@
 
 This is done using the  starter code for the final assessment project for Udacity's React & Redux course.
 
+To install the dependencies run:
+npm install 
+and to stat the project run: 
+npm start 
+
 The Project is a game where a user gets to choose only one choice for each poll created by him and other users 
 Users can't re vote for the same poll once again 
 Users may create new polls and post them to others 
@@ -9,6 +14,7 @@ if a poll is already answered by the user the user can see the results of this v
 
 Leaderboard is where results of who voted for more polls or created more questions is 
 Top three users are ranked Gold Silver and bronze respectively 
+
 
 More information about database files are below:
 

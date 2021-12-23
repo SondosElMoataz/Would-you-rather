@@ -39,7 +39,7 @@ function mapStateToProps({ users }){
         totalAsked: user.questions.length,
         totalScore:  Object.keys(user.answers).length + user.questions.length
 
-})).sort((a,b)=>b.total - a.total)
+})).sort((a,b)=>b.totalScore - a.totalScore)
 return {sortedUsers}
 }
 export default connect(mapStateToProps)(LeaderBoard)

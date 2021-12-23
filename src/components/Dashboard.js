@@ -27,10 +27,9 @@ class Dashboard extends Component {
 
   componentDidMount(){
     const { questionsIds,authedUser,users} = this.props
-    const unAnsweredQuestion = questionsIds
-    .filter(qid =>
-       !Object.keys(users[authedUser].answers)
-    .includes(qid))
+    const answeredQuestions = Object.keys(users[authedUser].answers)
+    const unAnsweredQuestion = questionsIds.filter(qid => !answeredQuestions.includes(qid))
+    
     
     this.setState({ 
       questionsToView : unAnsweredQuestion })

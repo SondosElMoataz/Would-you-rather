@@ -1,10 +1,19 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Redirect } from 'react-router-dom'
 import { Component } from 'react/cjs/react.production.min'
+import { setAuthedUser } from '../actions/authedUser'
 
-class  Nav extends Component {
+class  Nav extends Component { 
+
+  handleClick = (e)=>{
+    this.props.dispatch(setAuthedUser('NOUSER'))
+    // this.forceUpdate();
+
+  }
+ 
   render(){
+
     return (
       <nav className='nav'>
         <ul>
@@ -25,7 +34,13 @@ class  Nav extends Component {
           </NavLink>
           
         </li>
-        {this.props.username && <li> <div>Hello {this.props.username}</div></li>}
+        {this.props.username &&  <div>
+          <li> Hello {this.props.username}</li> 
+         <button
+         onClick={this.handleClick}>
+           Log out </button>
+          </div>}
+
      
         </ul>
       </nav>

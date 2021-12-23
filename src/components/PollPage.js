@@ -72,6 +72,7 @@ import {handleAddAnswer} from '../actions/shared'
             {optionOne.text}
             <progress value = {optionOne.votes.length} max = {totalVotes}> </progress>
             <p className='votes-info'> {optionOne.votes.length} out of {totalVotes} </p>
+            <p className='votes-info'> {((optionOne.votes.length/totalVotes).toFixed(2)*100)}%  </p>
             {userAnswer === optionOne ? <div>Voted </div>:  <div></div> }
             </div>
            
@@ -80,6 +81,7 @@ import {handleAddAnswer} from '../actions/shared'
             {optionTwo.text}
             <progress value = {optionTwo.votes.length} max = {totalVotes}> </progress>
             <p className='votes-info'> {optionTwo.votes.length} out of {totalVotes} </p>
+            <p className='votes-info'> {((optionTwo.votes.length/totalVotes).toFixed(2)*100)}%  </p>
             {userAnswer === optionTwo ? <div>Voted </div>:  <div></div> }
             </div>
             </div>

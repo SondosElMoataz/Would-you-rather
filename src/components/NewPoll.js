@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Redirect } from 'react-router-dom';
 import {handleAddPoll} from '../actions/shared'
 class NewPoll extends Component {
     state = {
@@ -24,7 +25,10 @@ class NewPoll extends Component {
         }))
     }
     render() {
-        const {optionOneText,optionTwoText} = this.state
+        const {optionOneText,optionTwoText,toHome} = this.state
+        if (toHome === true) {
+            return <Redirect to='/' />
+          }   
         return(
             <div>
              <form  onSubmit={this.handleSubmit} className='new-poll-form'>
